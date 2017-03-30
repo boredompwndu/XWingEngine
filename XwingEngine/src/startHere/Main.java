@@ -3,6 +3,7 @@ package startHere;
 import geometry.*;
 import shipCore.*;
 import gameCore.*;
+import gameGUI.*;
 
 public class Main {
 
@@ -12,6 +13,8 @@ public class Main {
 	System.out.println("Focus: " + dice.getResultCount(GameConstants.DiceResult.FOCUS));
 	System.out.println("Hit: " + dice.getResultCount(GameConstants.DiceResult.HIT));
 	System.out.println("Crit: " + dice.getResultCount(GameConstants.DiceResult.CRIT));
+	
+	new GameWindow();
 	}
 
 }

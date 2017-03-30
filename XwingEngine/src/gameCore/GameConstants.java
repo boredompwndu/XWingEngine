@@ -7,6 +7,9 @@ public interface GameConstants {
 	public static final double range3 = 300;
 	public static final double range4 = 400;
 	public static final double range5 = 500;
+	
+	public static final double coreBoxTableSize = 609.6;
+	public static final double standardTableSize = 914.4;
 
 public static final double smallShipBase = 40;
 public static final double largeShipBase = 80;

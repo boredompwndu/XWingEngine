@@ -13,11 +13,14 @@ public class ShipBase implements GameConstants{
 	protected FiringArc[] firingArcs;
 	protected ArrayList<DiceModification> diceMods = new ArrayList<>();
 	
-	
+	protected int pilotSkill = 0;
 	protected int attack = 0;
 	protected int defense = 0;
 	protected int hull = 0;
 	protected int shield = 0;
+	
+	protected String shipName = "";
+	protected String pilotName = "";
 	
 	protected ArrayList<Weapon> weapons = new ArrayList<>();
 	protected ArrayList<Token> tokens = new ArrayList<>();
@@ -225,6 +228,48 @@ public class ShipBase implements GameConstants{
 	public void setFiringArcs(FiringArc[] firingArcs) {
 		this.firingArcs = firingArcs;
 	}
+
+	public ArrayList<DiceModification> getDiceMods() {
+		return diceMods;
+	}
+
+	public void setDiceMods(ArrayList<DiceModification> diceMods) {
+		this.diceMods = diceMods;
+	}
+
+	public int getPilotSkill() {
+		return pilotSkill;
+	}
+
+	public void setPilotSkill(int pilotSkill) {
+		this.pilotSkill = pilotSkill;
+	}
+
+	public ArrayList<Token> getTokens() {
+		return tokens;
+	}
+
+	public void setTokens(ArrayList<Token> tokens) {
+		this.tokens = tokens;
+	}
+
+	public String getShipName() {
+		return shipName;
+	}
+
+	public void setShipName(String shipName) {
+		this.shipName = shipName;
+	}
+
+	public String getPilotName() {
+		return pilotName;
+	}
+
+	public void setPilotName(String pilotName) {
+		this.pilotName = pilotName;
+	}
+	
+	
 	
 
 }
